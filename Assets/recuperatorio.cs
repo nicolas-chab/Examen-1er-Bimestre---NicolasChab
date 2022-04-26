@@ -12,6 +12,9 @@ public class recuperatorio : MonoBehaviour
     int pesoG;
     int pesoPP;
     int pesoPG;
+    int precioG;
+    int precioPP;
+    int precioPG;
     void Start()
     {
         if(animal!="G" && animal != "PP" && animal != "PG")
@@ -27,20 +30,20 @@ public class recuperatorio : MonoBehaviour
             if (animal == "G")
             {
                 pesoG = 300 * dias;
-
-                Debug.Log("Para ese período se necesitan  " + pesoG + " gramos de alimento");
+                precioG = 240 * dias;
+                Debug.Log("Para ese período se necesitan  " + pesoG + " gramos de alimento y costara: " + precioG + "$");
             }
             if (animal == "PP")
             {
                 pesoPP = 400 * dias;
-
-                Debug.Log("Para ese período se necesitan  " + pesoPP + " gramos de alimento");
+                precioPP = 320 * dias;
+                Debug.Log("Para ese período se necesitan  " + pesoPP + " gramos de alimento y costara: " + precioPP + "$");
             }
             if (animal == "PG")
             {
                 pesoPG = 700 * dias;
-
-                Debug.Log("Para ese período se necesitan  " + pesoPG + " gramos de alimento");
+                precioPG = 560 * dias;
+                Debug.Log("Para ese período se necesitan  " + pesoPG + " gramos de alimento y costara: " + precioPG + "$");
             }
  
         }
